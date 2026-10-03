@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+
+# Customer Data & Exports
+data/*.csv
+*.csv
+
+# Excluded Case Study Materials
+*.pdf
+*.ipynb
+memo_to_priya.md
+recording_script.md
+
+# Streamlit & OS
+.streamlit/
+.DS_Store
+Thumbs.db
+
+# IDE & Editor
+.idea/
+.vscode/
