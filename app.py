@@ -371,7 +371,7 @@ with tab4:
 
     with col2:
         st.markdown("#### Known Structural Realities")
-        st.markdown("""
+        st.markdown(r"""
         1. **Legacy timestamp fix:** `legacy_fd` records were stored UTC; all other timestamps are IST. Shifting `resolved_at` by +5.5h completely eliminated negative handle times (from 68% down to 0%).
         2. **Order-lot fallback join:** 35% of tickets lacked `order_id`. A `merge_asof` fallback join on customer and product achieved **94.9% accuracy** on tickets with ground truth.
         3. **Agent name collision:** Two agents share the name "Kavya Pandey" (A3006 in Chat, A3029 in Logistics). All pipeline joins strictly use unique `agent_id`.
